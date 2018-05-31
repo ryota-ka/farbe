@@ -1,0 +1,12 @@
+[package]
+name = "farbe"
+version = "0.1.0"
+authors = ["Ryota Kameoka <kameoka.ryota@gmail.com>"]
+
+[dependencies]
+nom = "^4.0"
+
+[dependencies.clap]
+version =  "2.31"
+default-features = false
+features = ["suggestions", "yaml"]

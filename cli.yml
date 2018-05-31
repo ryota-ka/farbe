@@ -1,0 +1,37 @@
+name: farbe
+version: "0.1.0"
+author: Ryota Kameoka <kameoka.ryota@gmail.com>
+about: Command-line color preview tool
+settings:
+    - ArgRequiredElseHelp
+args:
+    - hex:
+        long: hex
+        value_name: HEX
+        help: 6-digit hexadecimal color code (e.g. \#123456)
+        takes_value: true
+    - red:
+        short: r
+        long: red
+        help: Red component of the color, used along with --green and --blue
+        takes_value: true
+    - green:
+        short: g
+        long: green
+        help: Green component of the color, used along with --red and --blue
+        takes_value: true
+    - blue:
+        short: b
+        long: blue
+        help: Blue component of the color, used along with --red and --green
+        takes_value: true
+    - width:
+        short: w
+        long: width
+        help: Width of the colored block
+        takes_value: true
+    - height:
+        short: h
+        long: height
+        help: width of the colored block
+        takes_value: true
